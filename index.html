@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="PT-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
     <title>To-do list </title>
 </head>
+
 <body>
 
     <div class="header">
-       <h1 class="titulo">todo</h1>
+        <h1 class="titulo"><img src="./assets/rocket.svg" alt="">
+            <span class="to">to</span><span class="do">do</span>
+        </h1>
     </div>
-    <div class="container">
-        <form action="">
-            <div class="input-add-lista">
-                <input id="item" type="text" placeholder="Adicione uma nova tarefa">
 
-                 <button type="submit"> Criar
-                    <img src="./assets/add.svg" alt="imagem de adicionar item">
-                </button>
+
+    <form action="">
+        <div class="input-add-lista">
+            <input id="item" type="text" placeholder="Adicione uma nova tarefa">
+
+            <button class="btn-created" type="submit"> Criar
+                <img src="./assets/add.svg" alt="imagem de adicionar item">
+            </button>
+        </div>
+
+        <div class="card-tasks">
+            <div>
+                <span class="task-created">Tarefas criadas</span>
+                <span class="counter-created">0</span>
             </div>
 
-            <div class="links">
-                <a href="#Tarefas criadas">Tarefas criadas</a>
-                <a href="#Concluidas">concluidas</a>
+            <div>
+                <span class="completed">Concluídas</span>
+                <span class="counter-completed">0</span>
             </div>
+        </div>
 
-            <div class="tasks"></div>
-        </form>
-    </div>
-    
-    
+        <div class="container-tasks"></div>
+    </form>
+
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
