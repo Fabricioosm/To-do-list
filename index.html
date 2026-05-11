@@ -16,7 +16,7 @@
 <body>
 
     <div class="header">
-        <h1 class="titulo"><img src="./assets/rocket.svg" alt="">
+        <h1 class="titulo"><img src="./assets/rocket.svg" alt="foguete To-do">
             <span class="to">to</span><span class="do">do</span>
         </h1>
     </div>
@@ -27,7 +27,7 @@
             <input id="item" type="text" placeholder="Adicione uma nova tarefa">
 
             <button class="btn-created" type="submit"> Criar
-                <img src="./assets/add.svg" alt="imagem de adicionar item">
+                <img src="./assets/add.svg" alt="imagem de adicionar item +">
             </button>
         </div>
 
@@ -43,12 +43,48 @@
             </div>
         </div>
 
-        <div class="container-tasks"></div>
+        <!-- <div class="container-tasks">
+            <img src="./assets/clipboard.svg" alt="prancheta">
+            <div class="txt">
+                <p class="tt-task-not-created">Você ainda não tem tarefas cadastradas</p>
+                <p class="tt-create-task">Crie tarefas e organize seus itens a fazer</p>
+            </div>
+        </div> -->
+
+        <div class="card-list">
+            <ul>
+                <li class="list"> <input type="checkbox" class="check">
+                    <p class="txt-list-item">Integer urna interdum massa libero auctor neque turpis turpis semper. Duis
+                        vel sed fames integer.</p>
+                    <button class="btn-trash"><img src="./assets/trash.svg" alt=""></button>
+                </li>
+                <li class="list"> <input type="checkbox" class="check">
+                    <p class="txt-list-item">Integer urna interdum massa libero auctor neque turpis turpis semper. Duis
+                        vel sed fames integer.</p>
+                    <button class="btn-trash"><img src="./assets/trash.svg" alt=""></button>
+                </li>
+                <li class="list"> <input type="checkbox" class="check">
+                    <p class="txt-list-item">Integer urna interdum massa libero auctor neque turpis turpis semper. Duis
+                        vel sed fames integer.</p>
+                    <button class="btn-trash"><img src="./assets/trash.svg" alt=""></button>
+                </li>
+                <li class="list"> <input type="checkbox" class="check">
+                    <p class="txt-list-item">Integer urna interdum massa libero auctor neque turpis turpis semper. Duis
+                        vel sed fames integer.</p>
+                    <button class="btn-trash"><img src="./assets/trash.svg" alt=""></button>
+                </li>
+                <li class="list"> <input type="checkbox" class="check">
+                    <p class="txt-list-item">Integer urna interdum massa libero auctor neque turpis turpis semper. Duis
+                        vel sed fames integer.</p>
+                    <button class="btn-trash"><img src="./assets/trash.svg" alt=""></button>
+                </li>
+            </ul>
+        </div>
     </form>
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 
 body{
     background: #1A1A1A;
-    font-family: 'inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -51,9 +51,9 @@ h1 .do{
 }
 
 .titulo{
-    font-family: 'inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 2.5rem;
-    font-weight: 900 black;
+    font-weight: 900;
 }
 
 .input-add-lista{
@@ -65,8 +65,8 @@ h1 .do{
   
 }
 
-input {
-    font-family: 'inter', sans-serif;
+#item {
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #F2F2F2;
@@ -77,14 +77,14 @@ input {
     border-radius: 0.5rem;
     padding: 1rem;    
 }
-input:focus{
+#item:focus{
     outline: 1px solid var(--ot-input);
 
 }
 
-input::placeholder {
+#itwm::placeholder {
     color: var(--tt-placeholder);
-    font-family: 'inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
 
@@ -104,9 +104,9 @@ input::placeholder {
     background: var(--bg-button);
     color: var(--tt-button);
 
-    font-family: 'inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
-    font-weight: 700 bold;
+    font-weight: 700;
     
     display: inline-flex;
     gap: 8px;
@@ -117,9 +117,9 @@ input::placeholder {
 }
 
 .card-tasks{
-    font-family: 'inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
-    font-weight: 700 bold;
+    font-weight: 700;
     width: 736px;
     height: 19px;
     display: flex;
@@ -161,4 +161,92 @@ input::placeholder {
     color: var(--tt-counter-completed);
 }
 
+.container-tasks {
+    height: 15.25rem;
+    width: 46rem;
+
+    border-top: 1px solid #333333; ;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+.tt-task-not-created{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #808080;
+}
+
+.tt-create-task{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #808080;
+}
+
+.card-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 24px;
+    
+}
+
+.list{
+    background: #262626;
+    height: 72px;
+    width: 736px;
+    border: 1px solid  #333333;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    
+    display: flex;
+    gap: 12px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #F2F2F2;
+} 
+
+.check{
+    width: 17.45px;
+    height: 17.45px;
+
+}
+
+.txt-list-item{
+    width: 632px;
+    height: 40px;  
+}
+
+.btn-trash{
+    background: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-trash:hover{
+    background: #333333;
+}
+.btn-trash:hover img{
+    content: url(/assets/trash-red.svg);
+}
 
