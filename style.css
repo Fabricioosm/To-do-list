@@ -225,7 +225,27 @@ h1 .do{
 .check{
     width: 17.45px;
     height: 17.45px;
+    appearance: none;
+    border-radius:999%;
+    border: 1px solid #4EA8DE;
 
+}
+
+.check:hover{
+    background: #1E6F9F;
+}
+
+.check:checked{
+    background-color: #5E60CE;
+    border: none;
+    background-image: url(./assets/img/check.svg);
+    background-repeat: no-repeat;  
+    background-position: center;
+    
+}
+.check:checked + p{
+    text-decoration: line-through;
+    color: #808080;
 }
 
 .txt-list-item{
@@ -246,7 +266,9 @@ h1 .do{
 .btn-trash:hover{
     background: #333333;
 }
-.btn-trash:hover img{
-    content: url(/assets/trash-red.svg);
+
+.btn-trash:hover svg path {
+    fill: #E25858;
 }
+
 
