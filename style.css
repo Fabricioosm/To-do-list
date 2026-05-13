@@ -9,6 +9,10 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+button{
+    cursor: pointer;
+}
+
 
 :root{
     --bg-header: #0D0D0D;
